@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #ccc;
+}
+
+/*
+     BOOT CSS
+*/
+
+.center {
+    max-width: 1820px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.flex{display: flex;}
+
+header{
+    height: 65px;
+    background-color: #131921;
+    color: white;
+}
+
+.logo{
+    padding: 0 9px; /* top bottom |  right left*/
+}
+.logo img{
+    width:150px;
+}
+
+.align-flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.align-flex-end{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*
+     FIM BOOT CSS
+*/
+
+.input-search{
+    padding: 0 10px;
+    width: 70%;
+    display: flex;
+}
+
+.input-search form{
+    display: flex;
+    width: 100%;
+}
+
+.input-search input[type=text]{
+    width: calc(100% - 40px); /*misturar percentagem com pixel*/
+    height: 40px;
+    border-radius: 5%;
+}
+
+.input-search button{
+    width: 40px;
+    border: 0;
+    height: 40px;
+    background-color: #febd69;
+    border-radius: 5%;
+}
+
+.text-info-header{
+    height: 50px;
+    font-size: 10px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.text-info-header p{
+    white-space: nowrap;
+}
+
+.text-info-header:hover{
+    border-radius: 3px;
+    outline: 2px solid white;
+}
+
+.produto {
+    background-color: #97afae;
+    margin: 10px;
+}
+.rodape {
+    background-color: #074963;
+    text-align:center;
+    padding-top: 10px ;
+}
+.rodape2 {
+    background-color: #0c6b91;
+    text-align:center;
+    
+}
+
+.vitrine {
+    min-height: 600px;
+    width: 100%;
+    background-image: url('Imagens/banner.jpg');
+    background-position: center;
+    background-size: cover; /*independente do tamanho de tela, cobrir tudo*/
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap; /* fazer com que, se não couber, cai pra proxima linha*/
+    justify-content: space-around;
+}
+
+.box-vitrine {
+    position: relative;
+    top: 15px;
+    width: 22%;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    
+}
+
+.box-vitrine a{
+    font-size: 13px;
+    color: #0c6b91;
+}
+.box-vitrine img{
+    width: 100%; /* imagem vai ficar do tamanho da vitrine*/
+   
+}
